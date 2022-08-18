@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../assets/space.jpg);
+    background-size: cover;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.hw{
+    text-align: center;
+    border-radius: 100%;
+    padding: 100px;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(255, 94, 0);
+    background-color: #FCD440;
+    box-shadow:       
+        0 0 3px #fff,
+        0 0 7px #fff,
+        0 0 11px #fff,
+        0 0 32px #FCD440,
+        0 0 62px #FCD440,
+        0 0 72px #FCD440,
+        0 0 80px #FCD440,
+        0 0 140px #FCD440;
+    border: 5px solid rgb(255, 200, 0);
+}
+
+.hw span{
+    display: block;
+}
+
+.text{
+	transform: scale(12);
+	animation: pulse 2s infinite;
+}
+
+.earth{
+    animation: rotation 10s infinite linear;
+}
+
+.earth::before{
+    content: '';
+    background-image: url(../assets/planeta-terra.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 200px;
+    top: 120px;
+    animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+    0%{
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1.1);
+
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
+}
