@@ -3,6 +3,9 @@ const pipe = document.querySelector('.pipe')
 const clouds = document.querySelector('.clouds')
 const gameBoard = document.querySelector('.game-board')
 const loseMsg = document.querySelector('.lose-message')
+const music = new Audio("../assets/ambiente-music.mp3")
+const loseMusic = new Audio("../assets/game-over-music.mp3")
+music.loop = true
 
 const loop = setInterval(() => {
     const pipePosition = pipe.offsetLeft
@@ -13,7 +16,7 @@ const loop = setInterval(() => {
         .getComputedStyle(clouds)
         .right.replace('px', '')
 
-    console.log(cloudsPosition)
+    music.play()
 
     if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
         pipe.style.animation = 'none'
@@ -32,6 +35,9 @@ const loop = setInterval(() => {
         gameBoard.style.opacity = '0.3'
 
         loseMsg.style.display = 'flex'
+
+        loseMusic.play()
+        music.pause()
         
         document.addEventListener('keydown', function(event){
             if(event.code === "Space"){
