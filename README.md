@@ -15,3 +15,5 @@ A seguir as regras do desafio:
  - ✅ Dia 03: Criar um botão animado.
 
  - ✅ Dia 04: O desafio era criar uma calculadora porém como desenvolvi uma recentemente resolvi fazer um jogo simples.
+
+ - ✅ Dia 05: Desenvolver uma página customizada que exiba o erro 404.
