@@ -19,3 +19,5 @@ A seguir as regras do desafio:
  - ✅ Dia 05: Desenvolver uma página customizada que exiba o erro 404.
 
  - ✅ Dia 06: Criar um card com o efeito glassmorphism.
+     
+ - ✅ Dia 07: Criar um contador.
