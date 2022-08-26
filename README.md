@@ -22,4 +22,6 @@ A seguir as regras do desafio:
      
  - ✅ Dia 07: Criar um contador.
 
- - ✅ Dia 08: Desenvolver um toggle que altere o tema para claro e escuro. 
+ - ✅ Dia 08: Desenvolver um toggle que altere o tema para claro e escuro.
+
+ - ✅ Dia 09: Criar uma animação de loading.
