@@ -50,8 +50,8 @@ body{
     position: absolute;
     height: 24px;
     width: 24px;
-    left: 12px;
-    bottom: 8px;
+    left: 11px;
+    bottom: 6px;
     background-color: var(--bg);
     transition: 400ms;
     pointer-events: none;
@@ -67,10 +67,10 @@ input:checked + .slider:before{
 
 .slider.round{
     border-radius: 34px;
-    border: solid 1px rgb(146, 146, 146);
+    border: solid 2px rgb(146, 146, 146);
 }
 
 .slider.round::before{
     border-radius: 50%;
-    border: solid 1px rgb(136, 136, 136);
+    border: solid 2px rgb(136, 136, 136);
 }
