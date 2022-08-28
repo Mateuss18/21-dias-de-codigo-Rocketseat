@@ -25,3 +25,7 @@ A seguir as regras do desafio:
  - ✅ Dia 08: Desenvolver um toggle que altere o tema para claro e escuro.
 
  - ✅ Dia 09: Criar uma animação de loading.
+ 
+ - ✅ Dia 10: Utilizar a lib Particles.js do JavaScript
+
+ - ✅ Dia 11: Criar o layout de um formulário de login.
