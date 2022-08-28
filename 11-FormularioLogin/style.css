@@ -107,3 +107,14 @@ body{
 .container-form aside img{
     width: 360px;
 }
+
+@media (max-width: 864px) {
+    .container-form aside{
+        display: none;
+    }
+
+    .container-form{
+        height: 370px;
+        width: 391px;
+    }
+}
