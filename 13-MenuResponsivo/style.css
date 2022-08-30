@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;;
+}
+
+body{
+    background-color: #406ab3;
+}
+
+.sidebar{
+    width: 300px;
+    height: 100vh;
+    background-color: #0F1621;
+    color: white;
+    padding: 20px;
+    transition: 400ms;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.logo img{
+    transition: 2s;
+    width: 180px;
+}
+
+.menu{
+    padding: 10px 10px 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.menu:hover{
+    background-color: #29303C;
+}
+
+.menu img{
+    width: 25px;
+}
+
+.menu:hover img{
+    filter: contrast(300%);
+}
+
+.profile{
+    transition: 2s;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.profile img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+.profile .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.profile .name{
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.profile .email{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.nav_list img{
+    width: 25px;
+}
+
+.link{
+    padding: 12px 10px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.link img{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.link a{
+    color: #D1D3D4;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.link:hover a{
+    color: white;
+}
+
+.link:hover{
+    background-color: #29303C;
+    border-radius: 8px;
+}
+
+.link:hover img{
+    filter: contrast(300%);
+}
+
+
+
+
+
+
+.sidebar.active{
+    transition: 500ms;
+    padding: 10px;
+    width: 70px;
+}
+
+.sidebar.active .group{
+    justify-content: center;
+}
+
+.sidebar.active .logo{
+    display: none;
+}
+
+.sidebar.active .profile{
+    justify-content: center;
+}
+
+.sidebar.active .profile img{
+    width: 50px;
+}
+
+.sidebar.active .profile .info{
+    display: none;
+}
+
+.sidebar.active .link{
+    padding: 10px 0;
+}
+
+.sidebar.active .link img{
+    margin: 0;
+}
+
+.sidebar.active .link span{
+    display: none;
+}
+
+.sidebar.active .link a{
+    align-items: center;
+    justify-content: center;
+}

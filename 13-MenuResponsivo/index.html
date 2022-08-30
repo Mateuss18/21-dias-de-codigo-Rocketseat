@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet"/>
+
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js" defer></script>
+        <title>Menu responsivo</title>
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="group">
+                <div class="logo">
+                    <img src="../assets/logo.svg" alt="">
+                </div>
+                <div onclick="switchMenu()" class="menu">
+                    <img src="../assets/menu.svg" alt="">
+                </div>
+            </div>
+            <div class="profile">
+                <div class="profile_img">
+                    <img
+                        src="https://i.pinimg.com/474x/cf/b8/77/cfb8778f2632ce6dba350f93616d2a74.jpg"
+                        alt=""
+                    />
+                </div>
+                <div class="info">
+                    <h3 class="name">Mark Grayson</h3>
+                    <p class="email">notTheInvincible@gmail.com</p>
+                </div>
+            </div>
+            <ul class="nav_list">
+                <li class="link">
+                    <a href="">
+                        <img src="../assets/Book.svg" alt="" />
+                        <span class="link_name">Disciplinas</span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="">
+                        <img src="../assets/Grid.svg" alt="" />
+                        <span class="link_name">Grade</span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="">
+                        <img src="../assets/Note.svg" alt="" />
+                        <span class="link_name">Notas</span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="">
+                        <img src="../assets/Schedule.svg" alt="" />
+                        <span class="link_name">Agenda</span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="">
+                        <img src="../assets/Time.svg" alt="" />
+                        <span class="link_name">Horarios</span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="">
+                        <img src="../assets/Absence.svg" alt="" />
+                        <span class="link_name">Ausências</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
