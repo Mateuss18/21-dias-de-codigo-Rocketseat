@@ -28,7 +28,7 @@ body{
 }
 
 .quiz-container #question-name{
-    font-size: 18px;
+    font-size: 22px;
     max-height: 600px;
     padding-bottom: 20px;
 }
@@ -71,14 +71,14 @@ ul{
     list-style-type: none;
 }
 
-.quiz-container #submit{
+.btn{
     margin: 20px auto 0 auto;
     cursor: pointer;
     border: none;
     color: white;
     background-color: #A5243D;
     border-radius: 10px;
-    height: 40px;
+    height: 45px;
     width: 100px;
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
@@ -86,7 +86,16 @@ ul{
     transition: 500ms;
 }
 
-.quiz-container #submit:hover{
+.btn:hover{
     transition: 500ms;
     background-color: #800c20;
+}
+
+.finalMessage{
+    text-align: center;
+    font-size: 28px;
+}
+
+.corrects{
+    color: #159115;
 }
