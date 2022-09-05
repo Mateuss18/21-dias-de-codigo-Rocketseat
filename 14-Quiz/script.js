@@ -9,7 +9,7 @@ const quizData = [
         correct: 'd'
     },
     {
-        question: 'O que significa da sigla HTML?',
+        question: 'O que significa a sigla HTML?',
         a: 'a) Hiper Text Mult Languege',
         b: 'b) Hypertext Market Label',
         c: 'c) Hypertext Markup Language',
