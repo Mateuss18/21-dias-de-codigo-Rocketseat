@@ -38,7 +38,7 @@ A seguir as regras do desafio:
 
  - ✅ Dia 14: Criar um formulário de quizzes.
 
- - ❌ Dia 15: Desenvolver um site que exiba uma vitrine de produtos de um e-commerce fictício (com nome dos produtos preços e imagens). 
+ - ✅ Dia 15: Desenvolver um site que exiba uma vitrine de produtos de um e-commerce fictício (com nome dos produtos preços e imagens). 
  
  - ❌ Dia 16: Desenvolver um site utilizando alguma API pública.
 

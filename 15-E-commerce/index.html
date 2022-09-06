@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js" defer></script>
+
+        <title>PhonesPlus</title>
+    </head>
+    <body>
+        <sidenav class="sidebar">
+            <ul>
+                <li>
+                    <img class="menuLogo" src="../assets/logo-phonesplus.png" alt="">
+                    <a href="" class="menu" onclick="expandMenu()">
+                        <svg
+                            width="72"
+                            height="48"
+                            viewBox="0 0 72 48"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M0 48H72V40H0V48ZM0 28H72V20H0V28ZM0 0V8H72V0H0Z"
+                                fill="#1A1F16"
+                            />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/user.svg" alt="" />
+                        <span class="description">Claudete Silva</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/store.svg" alt="" />
+                        <span class="description">Modelos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/cart.svg" alt="" />
+                        <span class="description">Carrinho</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/headset.svg" alt="" />
+                        <span class="description">Contato</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="leave">
+                <a href="">
+                    <img src="../assets/leave.svg" alt="" />
+                    <span class="description">Sair</span>
+                </a>
+            </div>
+        </sidenav>
+        <div class="content">
+            <div class="logo">
+                <img src="../assets/logo-phonesplus.png" alt="">
+            </div>
+            <div class="search-bar">
+                <input
+                    type="search"
+                    name=""
+                    onkeyup="search()"
+                    id="search-item"
+                    placeholder="Qual modelo está procurando?"
+                />
+            </div>
+            <div class="products" id="products-list">
+                <section class="product">
+                    <div class="p-img">
+                        <img
+                            class="product-img"
+                            src="https://http2.mlstatic.com/D_NQ_NP_974266-MLA48254501676_112021-O.webp"
+                            alt=""
+                        />
+                    </div>
+                    <h3 class="name">Moto E<sup>20</sup></h3>
+                    <span class="specs">32 GB - Azul</span>
+                    <h4 class="price">
+                        R$ 809,10 <span class="pay">à vista</span>
+                    </h4>
+                    <div class="buying">
+                        <button class="btn buy">Comprar</button>
+                        <bold class="btn">+</bold>
+                    </div>
+                </section>
+                <section class="product">
+                    <div class="p-img">
+                        <img
+                            class="product-img"
+                            src="https://http2.mlstatic.com/D_NQ_NP_788473-MLA43071856352_082020-O.webp"
+                            alt=""
+                        />
+                    </div>
+                    <h3 class="name">Galaxy A71</h3>
+                    <span class="specs">128 GB - Preto</span>
+                    <h4 class="price">
+                        R$ 2.599 <span class="pay">à vista</span>
+                    </h4>
+                    <div class="buying">
+                        <button class="btn buy">Comprar</button>
+                        <bold class="btn">+</bold>
+                    </div>
+                </section>
+                <section class="product">
+                    <div class="p-img">
+                        <img
+                            class="product-img"
+                            src="https://http2.mlstatic.com/D_NQ_NP_737594-MLA48991682753_022022-O.webp"
+                            alt=""
+                        />
+                    </div>
+                    <h3 class="name">Redmi Note 10S</h3>
+                    <span class="specs">128 GB - Cinza</span>
+                    <h4 class="price">
+                        R$ 1.364 <span class="pay">à vista</span>
+                    </h4>
+                    <div class="buying">
+                        <button class="btn buy">Comprar</button>
+                        <bold class="btn">+</bold>
+                    </div>
+                </section>
+                <section class="product">
+                    <div class="p-img">
+                        <img
+                            class="product-img"
+                            src="https://http2.mlstatic.com/D_NQ_NP_903326-MLA49172944210_022022-O.webp"
+                            alt=""
+                        />
+                    </div>
+                    <h3 class="name">Moto G<sup>71</sup></h3>
+                    <span class="specs">128 GB - Branco</span>
+                    <h4 class="price">
+                        R$ 1.699 <span class="pay">à vista</span>
+                    </h4>
+                    <div class="buying">
+                        <button class="btn buy">Comprar</button>
+                        <bold class="btn">+</bold>
+                    </div>
+                </section>
+                <section class="product">
+                    <div class="p-img">
+                        <img
+                            class="product-img"
+                            src="https://http2.mlstatic.com/D_NQ_NP_855583-MLA44293281868_122020-O.webp"
+                            alt=""
+                        />
+                    </div>
+                    <h3 class="name">Galaxy S20 FE</h3>
+                    <span class="specs">256 GB - Preto</span>
+                    <h4 class="price">
+                        R$ 4.999 <span class="pay">à vista</span>
+                    </h4>
+                    <div class="buying">
+                        <button class="btn buy">Comprar</button>
+                        <bold class="btn">+</bold>
+                    </div>
+                </section>
+                <section class="product">
+                    <div class="p-img">
+                        <img
+                            class="product-img"
+                            src="https://http2.mlstatic.com/D_NQ_NP_998147-MLA43684142872_102020-O.webp"
+                            alt=""
+                        />
+                    </div>
+                    <h3 class="name">Redmi 9C</h3>
+                    <span class="specs">64 GB - Laranja</span>
+                    <h4 class="price">
+                        R$ 899 <span class="pay">à vista</span>
+                    </h4>
+                    <div class="buying">
+                        <button class="btn buy">Comprar</button>
+                        <bold class="btn">+</bold>
+                    </div>
+                </section>
+                <section class="product">
+                    <div class="p-img">
+                        <img
+                            class="product-img"
+                            src="https://http2.mlstatic.com/D_NQ_NP_668976-MLA45686583998_042021-O.webp"
+                            alt=""
+                        />
+                    </div>
+                    <h3 class="name">LG K<sup>62+</sup></h3>
+                    <span class="specs">128 GB - Cinza</span>
+                    <h4 class="price">
+                        R$ 1.520 <span class="pay">à vista</span>
+                    </h4>
+                    <div class="buying">
+                        <button class="btn buy">Comprar</button>
+                        <bold class="btn">+</bold>
+                    </div>
+                </section>
+                <section class="product">
+                    <div class="p-img">
+                        <img
+                            class="product-img"
+                            src="https://http2.mlstatic.com/D_NQ_NP_691628-MLA48271398895_112021-O.webp"
+                            alt=""
+                        />
+                    </div>
+                    <h3 class="name">Moto G<sup>20</sup></h3>
+                    <span class="specs">64 GB - Rosa</span>
+                    <h4 class="price">
+                        R$ 1.179,90 <span class="pay">à vista</span>
+                    </h4>
+                    <div class="buying">
+                        <button class="btn buy">Comprar</button>
+                        <bold class="btn">+</bold>
+                    </div>
+                </section>
+                <section class="product">
+                    <div class="p-img">
+                        <img
+                            class="product-img"
+                            src="https://http2.mlstatic.com/D_NQ_NP_788362-MLA43651758551_102020-O.webp"
+                            alt=""
+                        />
+                    </div>
+                    <h3 class="name">Galaxy Note<sup>20</sup></h3>
+                    <span class="specs">256 GB - Bronze</span>
+                    <h4 class="price">
+                        R$ 3.999 <span class="pay">à vista</span>
+                    </h4>
+                    <div class="buying">
+                        <button class="btn buy">Comprar</button>
+                        <bold class="btn">+</bold>
+                    </div>
+                </section>
+                <section class="product">
+                    <div class="p-img">
+                        <img
+                            class="product-img"
+                            src="https://http2.mlstatic.com/D_NQ_NP_878984-MLA48990974075_022022-O.webp"
+                            alt=""
+                        />
+                    </div>
+                    <h3 class="name">Galaxy A<sup>03</sup></h3>
+                    <span class="specs">32 GB - Preto</span>
+                    <h4 class="price">
+                        R$ 749 <span class="pay">à vista</span>
+                    </h4>
+                    <div class="buying">
+                        <button class="btn buy">Comprar</button>
+                        <bold class="btn">+</bold>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <div class="logo">
+                <img src="../assets/logo-phonesplus.png" alt="">
+            </div>
+            <span>Celulares com os melhores preços você encontra aqui.</span>
+            <span>Copyright 2022, PhonesPlus, Feito por Mateus Lopes</span>
+            <h3>Siga-nos nas redes sociais</h3>
+            <ul class="social">
+                <li>
+                    <a href="">
+                        <img src="../assets/Facebook.png" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/Instagram.png" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/Twitter.png" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/YouTube.png" alt="" />
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
