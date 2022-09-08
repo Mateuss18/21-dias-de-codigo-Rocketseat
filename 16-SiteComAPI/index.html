@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +8,28 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
 
-    <title>Cotação de moedas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+
+    <title>Conversor de moedas</title>
 </head>
 <body>
     <div class="container">
         <h1>Conversor de moedas</h1>
         <span id="valueConverted"></span>
         <div class="group">
-            <select id="from_currency"></select>
             <input type="number" id="from_ammount" value="1">
+            <div class="select">
+                <select id="from_currency"></select>
+            </div>
         </div>
-        <button id="swap">🔃</button>
+        <button id="swap"><img src="https://cdn1.iconfinder.com/data/icons/material-core/18/swap-vert-512.png" alt=""></button>
         <div class="group">
-            <select id="to_currency"></select>
             <input type="number" id="to_ammount">
+            <div class="select">
+                <select id="to_currency"></select>
+            </div>
         </div>
     </div>
 </body>

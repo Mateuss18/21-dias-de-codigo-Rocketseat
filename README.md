@@ -40,7 +40,7 @@ A seguir as regras do desafio:
 
  - ✅ Dia 15: Desenvolver um site que exiba uma vitrine de produtos de um e-commerce fictício (com nome dos produtos preços e imagens). 
  
- - ❌ Dia 16: Desenvolver um site utilizando alguma API pública.
+ - ✅ Dia 16: Desenvolver um site utilizando alguma API pública.
 
  - ❌ Dia 17: Desenvolver um site que capture os eventos do teclado e exiba na ela o evento e a tecla pressionada.
 
