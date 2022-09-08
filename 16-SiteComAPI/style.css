@@ -26,6 +26,10 @@ input{
     border-radius: 8px;
 }
 
+input:focus{
+    border: solid 2px orange;
+}
+
 select:focus, input:focus{
     outline: none;
 }
