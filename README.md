@@ -42,7 +42,7 @@ A seguir as regras do desafio:
  
  - ✅ Dia 16: Desenvolver um site utilizando alguma API pública.
 
- - ❌ Dia 17: Desenvolver um site que capture os eventos do teclado e exiba na ela o evento e a tecla pressionada.
+ - ✅ Dia 17: Desenvolver um site que capture os eventos do teclado e exiba na ela o evento e a tecla pressionada.
 
  - ❌ Dia 18: Desenvolver um gerador de senhas aleatórias.
 
