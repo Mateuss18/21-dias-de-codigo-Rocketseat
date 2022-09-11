@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./style.css" />
+
+        <title>GeradorDeSenhas</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Gere sua senha segura aqui</h1>
+
+            <input type="text" id="inputPassword" />
+            <div class="group">
+                <input id="inputLength" type="range" min="6" max="24" />
+                <label for="inputLength" ></label>
+            </div>
+            <div class="secondContainer">
+                <div class="group">
+                    <input type="checkbox" id="checkNumber" />
+                    <label for="checkNumber">Números</label>
+                </div>
+                <div class="group">
+                    <input type="checkbox" id="checkUppercaseLett" />
+                    <label for="checkUppercaseLett" >Letras minúsculas</label>
+                </div>
+                <div class="group">
+                    <input type="checkbox" id="checkLowercaseLett" />
+                    <label for="checkLowercaseLett">Letras maiúsculas</label>
+                </div>
+                <div class="group">
+                    <input type="checkbox" id="checkSymbols" />
+                    <label for="checkSymbols">Símbolos</label>
+                </div>
+            </div>
+
+            <button id="generate">Gerar</button>
+        </div>
+        <script src="./script.js"></script>
+
+    </body>
+</html>
