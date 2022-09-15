@@ -42,12 +42,12 @@ A seguir as regras do desafio:
  
  - ✅ Dia 16: Desenvolver um site utilizando alguma API pública.
 
- - ✅ Dia 17: Desenvolver um site que capture os eventos do teclado e exiba na ela o evento e a tecla pressionada.
+ - ✅ Dia 17: Desenvolver um site que capture os eventos do teclado e exiba na tela o evento e a tecla pressionada.
 
  - ✅ Dia 18: Desenvolver um gerador de senhas aleatórias.
 
- - ❌ Dia 19: Desenvolver um site que gere imagens aleatórias utilizando a API do Unsplash.
+ - ✅ Dia 19: Desenvolver um site que gere imagens aleatórias utilizando a API do Unsplash.
 
- - ❌ Dia 20: Desenvolver um site de emoji picker. Ao selecionar o emoji, é copiado para a área de transferência.
+ - ✅ Dia 20: Desenvolver um site de emoji picker. Ao selecionar o emoji, é copiado para a área de transferência.
 
  - ❌ Dia 21: Desenvolver uma página para ser portfólio.
