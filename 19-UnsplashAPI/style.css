@@ -1,0 +1,34 @@
+body {
+    overflow-x: hidden;
+}
+
+h1{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.last-column{
+    padding-left: 17px;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    padding-bottom: 20px;
+    transition: 500ms;
+}
+
+img:hover {
+    transform: scale(1.03);
+    transition: 500ms;
+}
+
+@media (max-width: 691px) {
+    img{
+        width: 258px;
+        padding: 10px;
+    }
+}
