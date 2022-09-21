@@ -1,0 +1,155 @@
+:root{
+    --bg: #282828;
+    --primaryColor: #A80101;
+    --secondaryColor: rgb(242, 242, 242);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    background-color: var(--bg);
+    color: var(--secondaryColor);
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--secondaryColor);
+}
+
+ul{
+    list-style: none;
+}
+
+.wrapper{
+    width: min(65rem, 100%);
+    margin: auto;
+}
+
+header{
+    padding-top: 90px;
+    display: flex;
+
+}
+
+header .personal-info{
+    margin-right: 20px;
+}
+
+header .personal-info h1{
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+header .personal-info p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header .personal-info .social ul{
+    display: flex;
+    gap: 32px;
+    padding: 30px 0;
+}
+
+header .personal-info .social img{
+    height: 45px;
+    transition: 300ms;
+}
+
+header .personal-info .social a img:hover{
+    transform: scale(1.07);
+    transition-duration: 300ms;
+}
+
+header .personal-info button{
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    height: 50px;
+    width: 220px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid var(--primaryColor);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 400ms;
+}
+
+header .personal-info button:hover{
+    background-color: #960000;
+    transition-duration: 400ms;
+    border-color: var(--secondaryColor);
+}
+
+aside img{
+    width: 400px;
+}
+
+.projects{
+    padding-bottom: 60px;
+}
+
+.projects h2{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.projects .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projects .cards .card{
+    width: 330px;
+    height: fit-content;
+    background-color: var(--primaryColor);
+    border-radius: 5px;
+}
+
+.projects .cards .card .apresentationImage img{
+    width: 286px;
+}
+
+.projects .cards .card h3{
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.projects .cards .card .techs ul{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.projects .cards .card .links{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 30px;
+}
+
+.projects .cards .card .links div a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.centralize{
+    padding: 16px 22px;
+}
