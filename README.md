@@ -10,7 +10,8 @@ A seguir as regras do desafio:
 - Gerar networking com as pessoas que também estão participando do desafio.
 
 ## Desafios
- - ✅ Dia 01: Criar um repositório para listar os projetos que serão desenvolvidos durante os 21 dias de código.
+ - ✅ <a href="https://github.com/Mateuss18/21-dias-de-codigo-Rocketseat/blob/main/02-HelloWorld/index.html
+"> Dia 01: Criar um repositório para listar os projetos que serão desenvolvidos durante os 21 dias de código.</a>
 
  - ✅ Dia 02: Fazer um Hello World customizado com fontes, cores e imagens.
 
