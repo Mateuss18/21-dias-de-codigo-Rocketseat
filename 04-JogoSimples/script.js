@@ -3,8 +3,8 @@ const pipe = document.querySelector('.pipe')
 const clouds = document.querySelector('.clouds')
 const gameBoard = document.querySelector('.game-board')
 const loseMsg = document.querySelector('.lose-message')
-const music = new Audio("../assets/ambiente-music.mp3")
-const loseMusic = new Audio("../assets/game-over-music.mp3")
+const music = new Audio('./assets/ambiente-music.mp3')
+const loseMusic = new Audio('./assets/game-over-music.mp3')
 music.loop = true
 
 const loop = setInterval(() => {
@@ -28,7 +28,7 @@ const loop = setInterval(() => {
         clouds.style.animation = 'none'
         clouds.style.right = `${cloudsPosition}px`
 
-        mario.src = '../assets/game-over.png'
+        mario.src = './assets/game-over.png'
         mario.style.width = '75px'
         mario.style.marginLeft = '50px'
 
@@ -38,9 +38,9 @@ const loop = setInterval(() => {
 
         loseMusic.play()
         music.pause()
-        
-        document.addEventListener('keydown', function(event){
-            if(event.code === "Space"){
+
+        document.addEventListener('keydown', function (event) {
+            if (event.code === 'Space') {
                 document.location.reload()
             }
         })
@@ -49,8 +49,8 @@ const loop = setInterval(() => {
     }
 }, 10)
 
-document.addEventListener('keydown', function(event){
-    if(event.key === "ArrowUp"){
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'ArrowUp') {
         mario.classList.add('jump')
 
         setTimeout(() => {

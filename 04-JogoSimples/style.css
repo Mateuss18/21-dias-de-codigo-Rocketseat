@@ -22,11 +22,12 @@
 }
 
 .game-over h2{
+    align-items: center;
     transition: 400ms ease;
     font-family: 'Silkscreen', cursive;
     z-index: 1;
     opacity: 1;
-    font-size: 40px;
+    font-size: 70px;
     flex-direction: column;
     color: rgb(219, 0, 0);
     position: absolute;
@@ -109,14 +110,14 @@
 
 @keyframes pulse{
     0%{
-        font-size: 16px;
+        font-size: 26px;
     }
 
     50%{
-        font-size: 14px;
+        font-size: 24px;
     }
 
     100%{
-        font-size: 16px;
+        font-size: 26px;
     }
 }
