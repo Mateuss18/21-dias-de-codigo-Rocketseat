@@ -119,11 +119,24 @@ aside img{
     width: 330px;
     height: fit-content;
     background-color: var(--primaryColor);
+    border: solid 2px var(--primaryColor);
     border-radius: 5px;
+    transition: 300ms;
+}
+
+.projects .cards .card:hover{
+    border: solid 2px var(--secondaryColor);
+    transform: scale(1.05);
+    transition: 300ms;
+}
+.projects .cards .card .apresentationImage{
+    display: flex;
+    justify-content: center;
 }
 
 .projects .cards .card .apresentationImage img{
-    width: 286px;
+    width: 281px;
+    height: 158px;
 }
 
 .projects .cards .card h3{
@@ -134,7 +147,7 @@ aside img{
 .projects .cards .card .techs ul{
     display: flex;
     gap: 10px;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .projects .cards .card .links{
@@ -148,6 +161,13 @@ aside img{
     display: flex;
     align-items: center;
     gap: 5px;
+    height: 30px;
+    padding: 0 4px;
+}
+
+.projects .cards .card .links div a:hover{
+    background-color: #940000;
+    border-radius: 5px;
 }
 
 .centralize{
