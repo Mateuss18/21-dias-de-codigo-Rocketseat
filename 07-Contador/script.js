@@ -1,6 +1,6 @@
 const start = document.querySelector('.start')
 const pause = document.querySelector('.pause')
-const alertSong = new Audio('../assets/ding-alert.mp3')
+const alertSong = new Audio('./assets/ding-alert.mp3')
 
 let minutes = 0
 let seconds = 0
