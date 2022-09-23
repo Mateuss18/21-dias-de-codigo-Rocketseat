@@ -26,6 +26,10 @@ ul{
     list-style: none;
 }
 
+li{
+    display: flex;
+}
+
 .wrapper{
     width: min(65rem, 100%);
     margin: auto;
@@ -68,10 +72,10 @@ header .personal-info .social a img:hover{
     transition-duration: 300ms;
 }
 
-header .personal-info button{
+header .personal-info>a{
     background-color: var(--primaryColor);
     color: var(--secondaryColor);
-    height: 50px;
+    height: 55px;
     width: 220px;
     border-radius: 10px;
     font-size: 18px;
@@ -86,7 +90,7 @@ header .personal-info button{
     transition-duration: 400ms;
 }
 
-header .personal-info button:hover{
+header .personal-info>a:hover{
     background-color: #960000;
     transition-duration: 400ms;
     border-color: var(--secondaryColor);
@@ -147,7 +151,7 @@ aside img{
 .projects .cards .card .techs ul{
     display: flex;
     gap: 10px;
-    margin: 10px 0;
+    margin: 15px 0 10px 0;
 }
 
 .projects .cards .card .links{
@@ -161,12 +165,12 @@ aside img{
     display: flex;
     align-items: center;
     gap: 5px;
-    height: 30px;
-    padding: 0 4px;
+    height: 35px;
+    padding: 5px 4px;
 }
 
 .projects .cards .card .links div a:hover{
-    background-color: #940000;
+    background-color: #7c0000;
     border-radius: 5px;
 }
 
