@@ -1,0 +1,187 @@
+@use "../generalCSS/geral" as *;
+*{
+  @include resetDefaultCss
+}
+body{
+    height: 100vh;
+    background-color: #00c4ba;
+    color: #0d0d0d;
+    display: flex;
+    align-items: center;
+    font-family: 'Mulish', sans-serif;
+}
+.container{
+   @include flexAlingJustifyCenter;
+   flex-direction: column;
+   margin: 0 auto;
+   width: 500px;
+   height: 450px;
+   background-color: #ebebeb;
+   -webkit-box-shadow: 0px 0px 15px -5px #595959; 
+   box-shadow: 0px 0px 15px -5px #595959;
+   border-radius: 10px;
+   h1{
+         font-size: 33px;
+         margin-bottom: 30px;
+   } 
+   input#inputPassword {
+         color: white;
+         background-color: #141414;
+         text-align: center;
+         border-radius: 4px;
+         border: none;
+         font-size: 18px;
+         margin-bottom: 10px;
+         width: 320px;
+         height: 44px;
+   }
+   label[for="inputLength"]{
+      font-size: 16px;
+      background-color: #000000;
+      color: white;
+      padding: 3px;
+      border-radius: 4px;
+   }
+   button{
+         margin-top: 20px;
+         cursor: pointer;
+         background-color: #00b5ac;
+         color: #ffffff;
+         border-radius: 20px;
+         border: none;
+         width: 100px;
+         height: 50px;
+         font-weight: 700;
+         letter-spacing: 1px;
+         font-size: 17px;
+         transition: 300ms;
+         &:hover{
+            background-color: #00a39b;
+            transition: 300ms;
+         }
+   }
+   .secondContainer{
+      padding-top: 20px;
+      .group{
+         margin-top: 7px;
+         cursor: pointer;
+         label{
+               cursor: pointer;
+               font-size: 18px;
+         }
+         input{
+               cursor: pointer;
+         }
+         input[type=checkbox] {
+            display: none;
+         }
+         input + label::before{
+            content: '';
+            width: 18px;
+            height: 18px;
+            border-radius: 4px;
+            background-color: #f3f3f3;
+            border: 1px solid gray;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 13px;
+            margin-bottom: 3px;
+         }
+         input:checked + label::before{
+            background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+            background-color: #00c4ba;
+            background-position: center;
+            border: none;
+            padding: 1px;
+         }
+      }
+   }
+   input[type=range] {
+      width: 290px;
+      margin: 5.05px 0;
+      background-color: transparent;
+      -webkit-appearance: none;
+      &:focus {
+         outline: none;
+      }
+      &::-webkit-slider-runnable-track {
+         background: #d5d5d6;
+         border: 0;
+         border-radius: 25px;
+         width: 100%;
+         height: 9.9px;
+         cursor: pointer;
+      }
+      &::-webkit-slider-thumb {
+         margin-top: -5.05px;
+         width: 20px;
+         height: 20px;
+         background: #ffffff;
+         border: 4.3px solid #000000;
+         border-radius: 50px;
+         cursor: pointer;
+         -webkit-appearance: none;
+      }
+      &:focus::-webkit-slider-runnable-track {
+         background: #d5d5d6;
+      }
+      &::-moz-range-track {
+         background: #d5d5d6;
+         border: 0;
+         border-radius: 25px;
+         width: 100%;
+         height: 9.9px;
+         cursor: pointer;
+      }
+      &::-moz-range-thumb {
+         width: 20px;
+         height: 20px;
+         background: #ffffff;
+         border: 4.3px solid #000000;
+         border-radius: 50px;
+         cursor: pointer;
+      }
+      &::-ms-track {
+         background: transparent;
+         border-color: transparent;
+         border-width: 6.05px 0;
+         color: transparent;
+         width: 100%;
+         height: 9.9px;
+         cursor: pointer;
+      }
+      &::-ms-fill-lower {
+         background: #d5d5d6;
+         border: 0;
+         border-radius: 50px;
+      }
+      &::-ms-fill-upper {
+         background: #d5d5d6;
+         border: 0;
+         border-radius: 50px;
+      }
+      &::-ms-thumb {
+         width: 20px;
+         height: 20px;
+         background: #ffffff;
+         border: 4.3px solid #000000;
+         border-radius: 50px;
+         cursor: pointer;
+         margin-top: 0px;
+         /*Needed to keep the Edge thumb centred*/
+      }
+      &:focus::-ms-fill-lower {
+         background: #d5d5d6;
+      }
+      &:focus::-ms-fill-upper {
+         background: #d5d5d6;
+      }
+   }
+   /*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+   how to remove the virtical space around the range input in IE*/
+   @supports (-ms-ime-align:auto) {
+      input[type=range] {
+         margin: 0;
+      }
+   }
+}

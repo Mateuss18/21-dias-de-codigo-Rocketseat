@@ -1,0 +1,128 @@
+@use "../generalCSS/geral" as *;
+* {
+    @include resetDefaultCss;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #406ab3;
+}
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: #0f1621;
+    color: white;
+    padding: 20px;
+    transition: 400ms;
+    .group {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        .logo img {
+            transition: 2s;
+            width: 180px;
+        }
+        .menu {
+            padding: 10px 10px 6px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: fit-content;
+            &:hover {
+                background-color: #29303c;
+            }
+            &:hover img {
+                filter: contrast(300%);
+            }
+            img {
+                width: 25px;
+            }
+        }
+    }
+    .profile {
+        transition: 2s;
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+        img {
+            width: 60px;
+            border-radius: 50%;
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4px;
+        }
+        .name {
+            font-size: 15px;
+            font-weight: 900;
+        }
+        .email {
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+    .nav_list {
+        .link {
+            padding: 12px 10px;
+            margin: 8px 0;
+            cursor: pointer;
+            img {
+                width: 20px;
+                margin-right: 20px;
+            }
+            a {
+                color: #d1d3d4;
+                font-size: 15px;
+                display: flex;
+                align-items: center;
+            }
+            &:hover a {
+                color: white;
+            }
+            &:hover {
+                background-color: #29303c;
+                border-radius: 8px;
+            }
+            &:hover img {
+                filter: contrast(300%);
+            }
+        }
+    }
+    &.closed {
+        transition: 500ms;
+        padding: 10px;
+        width: 70px;
+        .group {
+            justify-content: center;
+        }
+        .logo {
+            display: none;
+        }
+        .profile {
+            justify-content: center;
+        }
+        .profile img {
+            width: 50px;
+        }
+        .profile .info {
+            display: none;
+        }
+        .link {
+            padding: 10px 0;
+        }
+        .link img {
+            margin: 0;
+        }
+        .link span {
+            display: none;
+        }
+        .link a {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

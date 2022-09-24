@@ -1,5 +1,5 @@
-let bodyy = document.getElementById('bodyy')
+let theme = document.getElementById('theme')
 
 function darkMode(){
-    bodyy.classList.toggle('darkMode')
+    theme.classList.toggle('darkMode')
 }

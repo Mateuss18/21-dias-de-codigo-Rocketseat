@@ -1,0 +1,82 @@
+@use "../generalCSS/geral" as *;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap");
+
+* {
+    @include resetDefaultCss;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    background-color: #9cafb7;
+    height: 100vh;
+    @include flexAlingJustifyCenter;
+}
+.quiz-container {
+    width: 410px;
+    height: fit-content;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    #question-name {
+        font-size: 22px;
+        max-height: 600px;
+        padding-bottom: 20px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        gap: 5px;
+        li {
+            display: flex;
+            gap: 5px;
+            font-weight: 600;
+            label {
+                display: flex;
+                width: 100%;
+                padding: 8px;
+                cursor: pointer;
+            }
+            &:hover {
+                background-color: #9cafb77e;
+                border-radius: 5px;
+            }
+        }
+    }
+    input[type="radio"]:checked + label {
+        background-color: #314e5b;
+        color: white;
+        border-radius: 5px;
+    }
+    input {
+        display: none;
+    }
+    .btn {
+        margin: 20px auto 0 auto;
+        cursor: pointer;
+        border: none;
+        color: white;
+        background-color: #a5243d;
+        border-radius: 10px;
+        height: 45px;
+        width: 100px;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+        letter-spacing: 1px;
+        transition: 500ms;
+        &:hover {
+            transition: 500ms;
+            background-color: #800c20;
+        }
+    }
+    .finalMessage {
+        text-align: center;
+        font-size: 28px;
+        .corrects {
+            color: #159115;
+        }
+    }
+}
