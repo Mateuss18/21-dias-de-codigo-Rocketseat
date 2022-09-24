@@ -11,7 +11,7 @@ function startTimer() {
     start.style.display = 'none'
     pause.style.display = 'inline'
 
-    timer = setInterval(counter, 1)
+    timer = setInterval(counter, 1000)
 }
 
 function pauseTimer() {

@@ -1,0 +1,20 @@
+@mixin resetDefaultCss {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin flexAlingJustifyCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin alingJustifyCenter {
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+@use "../generalCSS/geral" as *;
+*/

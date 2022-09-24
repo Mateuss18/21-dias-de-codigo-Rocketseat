@@ -1,0 +1,102 @@
+@use "../generalCSS/geral" as *;
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+
+* {
+    @include resetDefaultCss;
+}
+
+.game-over {
+    background-color: hsl(0, 0%, 0%);
+    h2 {
+        transition: 400ms ease;
+        font-family: "Silkscreen", cursive;
+        z-index: 1;
+        opacity: 1;
+        font-size: 70px;
+        flex-direction: column;
+        color: rgb(221, 18, 18);
+        position: absolute;
+        display: none;
+        @include alingJustifyCenter;
+        height: 100%;
+        width: 100%;
+        span {
+            animation: pulse 3s infinite linear;
+        }
+    }
+    .game-board {
+        transition: 300ms;
+        width: 100%;
+        height: 100vh;
+        border-bottom: 15px solid rgb(30, 200, 4);
+        background: linear-gradient(#87ceeb, #cdf0fe);
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        .clouds {
+            padding-top: 20px;
+            position: absolute;
+            width: 500px;
+            animation: clouds-animation 20s infinite linear;
+        }
+        .mario {
+            width: 158px;
+            position: absolute;
+            bottom: 0;
+        }
+        .pipe {
+            position: absolute;
+            bottom: 0;
+            width: 75px;
+            height: 77px;
+            animation: pipe-animation 1.5s infinite linear;
+        }
+        .jump {
+            animation: mario-jump 500ms ease-out;
+        }
+    }
+}
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
+@keyframes mario-jump {
+    0% {
+        bottom: 0;
+    }
+    40% {
+        bottom: 180px;
+    }
+    50% {
+        bottom: 180px;
+    }
+    60% {
+        bottom: 180px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+@keyframes clouds-animation {
+    from {
+        right: -500px;
+    }
+    to {
+        right: 100%;
+    }
+}
+@keyframes pulse {
+    0% {
+        font-size: 26px;
+    }
+    50% {
+        font-size: 24px;
+    }
+    100% {
+        font-size: 26px;
+    }
+}

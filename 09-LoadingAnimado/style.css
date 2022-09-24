@@ -29,7 +29,6 @@ body {
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
-
 .ampulheta {
     --polygonH: polygon(
         0% 0%,

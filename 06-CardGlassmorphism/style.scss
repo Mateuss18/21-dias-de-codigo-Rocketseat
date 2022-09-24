@@ -1,0 +1,57 @@
+@use "../generalCSS/geral" as *;
+*{
+    @include resetDefaultCss;
+}
+
+body{
+    height: 100vh;
+    @include flexAlingJustifyCenter;
+    background-image: url(./assets/paisagem.jpg);      
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(14, 14, 14);
+    span{
+        display: block;
+    }
+    .card{
+        width: 270px;
+        height: 320px;
+        background: rgba(106, 106, 106, 0.168);
+        box-shadow: 1px 1px 15px 0 rgba(32, 32, 32, 0.37);
+        backdrop-filter: blur( 1.5px );
+        -webkit-backdrop-filter: blur( 1.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        @include flexAlingJustifyCenter;
+        flex-direction: column;
+        font-family: 'Ubuntu', sans-serif;
+        .city{
+            font-size: 30px;
+            text-transform: capitalize;
+            padding-bottom: 10px;
+        }
+        .description{
+            font-size: 20px;
+        }
+        .icon{
+            width: 90px;
+            filter: saturate(212%);  
+        }
+        .temperature{
+            position: relative;
+            bottom: 10px;
+            font-size: 40px;
+            padding-bottom: 10px;
+        }
+        .humidity{
+            padding-bottom: 10px;
+        }
+        .humidity, .wind{
+            font-weight: 600;
+            color: rgb(0, 0, 0);
+            text-shadow: 1.5px 1.7px rgba(157, 157, 157, 0.53);
+            font-size: 20px;
+            filter: saturate(212%);  
+        }
+    }
+}

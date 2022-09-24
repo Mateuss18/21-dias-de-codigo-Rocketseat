@@ -1,0 +1,101 @@
+@use "../generalCSS/geral" as *;
+* {
+    @include resetDefaultCss;
+}
+
+body {
+    font-family: "Hind Siliguri", sans-serif;
+    .container {
+        @include flexAlingJustifyCenter;
+        background-color: #3b9200;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        h1 {
+            color: #f8f8f8;
+            margin-bottom: 30px;
+        }
+        .direitos {
+            margin-top: 40px;
+            color: #f8f8f8;
+            font-weight: 100;
+            font-size: 14px;
+        }
+        .container-form {
+            height: 400px;
+            width: 850px;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            form {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                h2 {
+                    padding-bottom: 20px;
+                    font-weight: 1000;
+                    font-size: 28px;
+                    color: rgb(0, 42, 0);
+                }
+                input {
+                    width: 350px;
+                    height: 55px;
+                    border-radius: 25px;
+                    border: solid 2px rgba(196, 196, 196, 0.333);
+                    background-color: rgba(210, 250, 205, 0.464);
+                    margin-bottom: 15px;
+                    padding-left: 15px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: rgb(74, 74, 74);
+                    &::placeholder {
+                        color: rgb(172, 172, 172);
+                    }
+                    &:focus {
+                        border: solid 2px rgb(186, 186, 186);
+                        outline: none;
+                    }
+                }
+                button {
+                    border-radius: 25px;
+                    height: 50px;
+                    background-color: #3b9200;
+                    border: solid 2px #327c00;
+                    color: #f8f8f8;
+                    font-weight: 600;
+                    font-size: 17px;
+                    cursor: pointer;
+                    transition: 500ms;
+                    &:hover {
+                        background-color: #2f7600;
+                        transition: 500ms;
+                        font-size: 18px;
+                    }
+                }
+                p {
+                    margin-top: 30px;
+                    color: rgb(89, 89, 89);
+                    span {
+                        color: #3b9200;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+                }
+            }
+            aside img {
+                width: 360px;
+            }
+        }
+    }
+}
+@media (max-width: 864px) {
+    .container-form {
+        height: 370px;
+        width: 391px;
+        aside {
+            display: none;
+        }
+    }
+}
