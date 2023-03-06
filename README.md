@@ -2,6 +2,11 @@
 
 # 21 dias de codigo
 
+
+![bandicam 2023-03-05 23-34-43-767](https://user-images.githubusercontent.com/71786964/223006457-1d9e6bb7-896e-405b-b83f-7e911f833f3f.jpg)
+
+
+
 #21diasdecodigo é um desafio proposto pela Rocketseat.
 
 A seguir as regras do desafio:
